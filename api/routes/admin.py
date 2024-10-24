@@ -1,8 +1,5 @@
-from fastapi import FastAPI, APIRouter
+from fastapi import APIRouter
+from schemes import User
 
-router = APIRouter(prefix='/admin', tags=['admin'])
-
-@router.get('/')
-def index():
-    return {'message': '1'}
+admin = APIRouter(prefix='/admin', tags=['admin'])
 
