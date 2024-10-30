@@ -1,5 +1,7 @@
 FROM python:latest
 
+RUN apt-get update && apt-get install -y python3 python3-pip python3-distutils
+
 WORKDIR /app
 
 COPY ./requirements.txt /app/requirements.txt
