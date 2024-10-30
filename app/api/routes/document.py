@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, status, HTTPException
-from schemes import CreateUser, ResponseToken
-from database import SessionLocal
-from models import User
+from app.schemes import CreateUser, ResponseToken
+from app.database import SessionLocal
+from app.models import User
 from typing import Annotated
 from sqlalchemy.orm import Session
 
